@@ -1,5 +1,5 @@
-# SoE
-## Serial Over Ethernet Device
+# SoE (Serial Over Ethernet)
+## Device Overview
 
 This is the firmware for a device that can communicate (bi-directional) to an RS232 device over Wi-Fi using a ESP8266 Node MCU 12E device and a NulSom Inc. Ultra Compact RS232 to TTL Converter with Male DB9 (3.3V to 5V).
 
@@ -14,6 +14,8 @@ The firmware dumps messages to a software based serial device using pins D1 and 
 where **`/dev/tty.usbserial-1430`** is the name of my USB to TTL Serial cable. This cable can be purchased from Adafruit or possibly on Amazon.
 
 [USB to TTL Serial Cable from Adafruit](https://www.adafruit.com/product/954)
+
+> NOTE I show the RTS and CTS wires connected but they were uneccessary in my application (and not connected in my final device). If communications with your device does not work you can try connecting them, otherwise leave them disconnected if your device works without them.
 
 ### Hardware
 
