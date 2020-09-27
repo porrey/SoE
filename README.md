@@ -1,11 +1,11 @@
 # SoE
 ## Serial Over Ethernet Device
 
-This is the firmware for a device that can communicate to an RS232 device over Wi-Fi using a ESP8266 Node MCU 12E device and a NulSom Inc. Ultra Compact RS232 to TTL Converter with Male DB9 (3.3V to 5V).
+This is the firmware for a device that can communicate (bi-directional) to an RS232 device over Wi-Fi using a ESP8266 Node MCU 12E device and a NulSom Inc. Ultra Compact RS232 to TTL Converter with Male DB9 (3.3V to 5V).
 
-I built this to communicate to an LED sign I bought over ten years ago that still works great but has a traditional DB9 serial port using RS232 communicatiosn. This port requires a strict protocol to work. I did not want to have to get the serial cable out as well as a USB adapter every time I wanted to change the sign so I built this device which allows me to program it remotely over Wi-Fi.
+I built this to communicate to an LED sign I bought over ten years ago that still works great but has a traditional DB9 serial port using RS232 communications. This port requires a strict protocol to work. I did not want to have to get the serial cable out as well as a USB adapter every time I wanted to change the sign so I built this device which allows me to program it remotely over Wi-Fi.
 
-I tried wiring the ESP8266 direclty in several ways but could not get it to commmunicate. I bought a RS232 to TTL converter from NulSom and this did the trik. This device will should work with any RS232 device.
+I tried wiring the ESP8266 directly in several ways but could not get it to communicate. I bought a RS232 to TTL converter from NulSom and this did the trick. This device will should work with any RS232 device.
 
 The firmware dumps messages to a software based serial device using pins D1 and D2. I connect a standard USB to TTL Serial cable (4-pin) and monitor using some basic serial ort software or the Arduino IDE. On my Mac, I can use the terminal window with the following command
 
