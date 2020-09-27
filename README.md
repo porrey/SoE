@@ -13,12 +13,12 @@ The firmware dumps messages to a software based serial device using pins D1 and 
 
 where **`/dev/tty.usbserial-1430`** is the name of my USB to TTL Serial cable. This cable can be purchased from Adafruit or possibly on Amazon.
 
-[](https://www.adafruit.com/product/954)
+[USB to TTL Serial Cable from Adafruit](https://www.adafruit.com/product/954)
 
 ### Hardware
 
-1. **HiLetgo 1PC ESP8266 NodeMCU CP2102 ESP-12E Internet WiFi Development Board** [](https://www.amazon.com/gp/product/B010O1G1ES)
-2. **NulSom Inc. Ultra Compact RS232 to TTL Converter with Male DB9 (3.3V to 5V)** [](https://www.amazon.com/gp/product/B00OPU2QJ4/)
+1. **HiLetgo 1PC ESP8266 NodeMCU CP2102 ESP-12E Internet WiFi Development Board** [https://www.amazon.com/gp/product/B010O1G1ES](https://www.amazon.com/gp/product/B010O1G1ES)
+2. **NulSom Inc. Ultra Compact RS232 to TTL Converter with Male DB9 (3.3V to 5V)** [https://www.amazon.com/gp/product/B00OPU2QJ4/](https://www.amazon.com/gp/product/B00OPU2QJ4/)
 
 ### Software
 
@@ -27,19 +27,19 @@ where **`/dev/tty.usbserial-1430`** is the name of my USB to TTL Serial cable. T
 
 The images below show how to connect the RS232 to TTL Converter to the ESP8266.
 
-![](https://raw.githubusercontent.com/porrey/soe/master/Fritzing/SoE_Breadboard.png)
+![Breadboard](https://raw.githubusercontent.com/porrey/soe/master/Fritzing/SoE_Breadboard.png)
 
-![](https://raw.githubusercontent.com/porrey/soe/master/Fritzing/SoE_Schematic.png)
+![Schematic](https://raw.githubusercontent.com/porrey/soe/master/Fritzing/SoE_Schematic.png)
 
 ### Configuration
 
 Follow the instructions for the Virtual COM port driver from NetBurner. My settings for the device I built are shown below.
 
 The image below shows the port after it has been created.
-![](https://raw.githubusercontent.com/porrey/soe/master/Images/NetBurner1.png)
+![Configured Port](https://raw.githubusercontent.com/porrey/soe/master/Images/NetBurner1.png)
 
 This image shows the properties for the defined virtual port.
-![](https://raw.githubusercontent.com/porrey/soe/master/Images/NetBurner2.png)
+![Port Settings](https://raw.githubusercontent.com/porrey/soe/master/Images/NetBurner2.png)
 
 This image shows the COM port in the Devices manager under Windows 10.
-![](https://raw.githubusercontent.com/porrey/soe/master/Images/NetBurner3.png)
+![COM Device](https://raw.githubusercontent.com/porrey/soe/master/Images/NetBurner3.png)
