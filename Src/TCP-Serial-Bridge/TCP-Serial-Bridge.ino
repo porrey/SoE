@@ -10,6 +10,11 @@
 #define MDNS_SERVICE "SoE"
 
 // ***
+// *** The name of the device offered.
+// ***
+#define DEVICE_BASE_NAME "SoE"
+
+// ***
 // *** Wi-Fi Manager is used to get Wi-Fi credentials setup using another
 // *** computer or mobile phone. Local initialization. Once its business
 // *** is done, there is no need to keep it around
@@ -76,7 +81,7 @@ void setup()
   // ***
   // *** Create a unique device name.
   // ***
-  String deviceName = MDNS_SERVICE + String("-") + String(ESP.getFlashChipId(), HEX);
+  String deviceName = DEVICE_BASE_NAME + String("-") + String(ESP.getFlashChipId(), HEX);
 
   // ***
   // *** Set some Wi-Fi Manager properties.
@@ -258,7 +263,7 @@ void loop()
 void QueryMdns()
 {
   // ***
-  // *** Send out query for esp tcp services.
+  // *** Send out query for tcp services.
   // ***
   DEBUG.print("Sending mDNS query for "); DEBUG.print(MDNS_SERVICE); DEBUG.println(" services.");
   int n = MDNS.queryService(MDNS_SERVICE, "tcp");
